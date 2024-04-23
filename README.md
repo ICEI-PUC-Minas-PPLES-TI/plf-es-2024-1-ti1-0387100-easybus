@@ -1,18 +1,22 @@
-# Nome do projeto
+# EasyBus
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+A EasyBus surge como uma solução inovadora para os desafios enfrentados no transporte público, que são frequentemente causados pela falta de controle e gestão eficiente por parte das empresas de ônibus e órgãos reguladores.
+
+Essa plataforma tem como objetivo principal monitorar o status da frota de ônibus e dos motoristas em tempo real. Essas informações são distribuídas de maneira estratégica para auxiliar todos os envolvidos em suas tarefas diárias.
+
+Dessa forma, a EasyBus contribui para a melhoria da eficiência do transporte público, proporcionando uma experiência de viagem mais agradável e confiável para os passageiros, ao mesmo tempo em que facilita a gestão para as empresas de ônibus. Com a EasyBus, o transporte público se torna mais transparente, acessível e eficiente para todos.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* João Pedro Gomes Ruas
+* Thyago Marques Correa
+* Santhiago Takaesu Sampaio
+* William Matheus Meira da Silva
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Rommel Vieira Carneiro
+* Cleiton Silva Tavares
 
 ## Instruções de utilização
 
