@@ -1,6 +1,6 @@
 # EasyBus
 
- EasyBus surge como uma solução inovadora para os desafios enfrentados no transporte público, que são frequentemente causados pela falta de controle e gestão eficiente por parte das empresas de ônibus e órgãos reguladores.
+A EasyBus surge como uma solução inovadora para os desafios enfrentados no transporte público, que são frequentemente causados pela falta de controle e gestão eficiente por parte das empresas de ônibus e órgãos reguladores.
 
 Essa plataforma tem como objetivo principal monitorar o status da frota de ônibus e dos motoristas em tempo real. Essas informações são distribuídas de maneira estratégica para auxiliar todos os envolvidos em suas tarefas diárias.
 
