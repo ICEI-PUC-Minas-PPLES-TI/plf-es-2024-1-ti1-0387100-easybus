@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editar Perfil</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  .form {
+    flex: 1;
+    margin: 10px;
+  }
+  input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+  }
+  .button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #777;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="form">
+    <h1>Editar Perfil</h1>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+      
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" required>
+      
+      <label for="cnpj">CNPJ:</label>
+      <input type="text" id="cnpj" name="cnpj">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <button type="submit" class="button">Salvar</button>
+      <button type="button" class="button" onclick="history.back()">Voltar</button>
+    </form>
+  </div>
+  <div class="form">
+    <h1>Dados Salvos</h1>
+    <form>
+      <label for="nomeSaved">Nome:</label>
+      <input type="text" id="nomeSaved" name="nomeSaved" disabled>
+      
+      <label for="cpfSaved">CPF:</label>
+      <input type="text" id="cpfSaved" name="cpfSaved" disabled>
+      
+      <label for="cnpjSaved">CNPJ:</label>
+      <input type="text" id="cnpjSaved" name="cnpjSaved" disabled>
+      
+      <label for="emailSaved">Email:</label>
+      <input type="email" id="emailSaved" name="emailSaved" disabled>
+    </form>
+  </div>
+</div>
+</body>
+</html>
