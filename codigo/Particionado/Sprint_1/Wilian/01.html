@@ -3,136 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Administração</title>
+    <title>Administração de Frota de Ônibus</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .hidden {
-            display: none;
-        }
-        #map {
-            height: 400px;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
 <body>
-    <header>
-        <h1>Painel de Administração</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#dashboard" onclick="showSection('dashboard')">Dashboard</a></li>
-            <li><a href="#usuarios" onclick="showSection('usuarios')">Gerenciar Motoristas</a></li>
-            <li><a href="#produtos" onclick="showSection('produtos')">Gerenciar Frota de Ônibus</a></li>
-            <li><a href="#relatorios" onclick="showSection('relatorios')">Relatórios</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section id="dashboard" class="content-section">
-            <h2>Dashboard</h2>
-            <div id="map"></div>
-        </section>
-        <section id="usuarios" class="content-section hidden">
-            <h2>Gerenciar Motoristas</h2>
-            <p>Preencha o formulário abaixo para adicionar um novo motorista:</p>
-            <form id="driverForm">
-                <label for="driverName">Nome do Motorista:</label>
-                <input type="text" id="driverName" name="driverName" required>
-                <label for="driverBirthDate">Data de Nascimento:</label>
-                <input type="text" id="driverBirthDate" name="driverBirthDate" pattern="\d{2}/\d{2}/\d{4}" placeholder="DD/MM/AAAA" required>
-                <label for="driverNumber">Número de Telefone:</label>
-                <input type="tel" id="driverNumber" name="driverNumber" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(DD) 99999-9999" required>
-                <label for="driverEmail">Email:</label>
-                <input type="email" id="driverEmail" name="driverEmail" required>
-                <label for="driverCEP">CEP:</label>
-                <input type="text" id="driverCEP" name="driverCEP" pattern="[0-9]{5}-?[0-9]{3}" required>
-                <button type="button" onclick="fetchAddress()">Preencher Localização</button>
-                <label for="driverAddress">Endereço:</label>
-                <input type="text" id="driverAddress" name="driverAddress" readonly>
-                <button type="submit">Adicionar Motorista</button>
-            </form>
-            <!-- Lista de Motoristas -->
-        </section>
-        <section id="produtos" class="content-section hidden">
-            <h2>Gerenciar Frota de Ônibus</h2>
-            <p>Preencha o formulário abaixo para adicionar um novo ônibus à frota:</p>
-            <form id="busForm">
-                <label for="busName">Nome do Ônibus:</label>
-                <input type="text" id="busName" name="busName" required>
-                <label for="busModel">Modelo:</label>
-                <input type="text" id="busModel" name="busModel" required>
-                <label for="busCapacity">Capacidade de Passageiros:</label>
-                <input type="number" id="busCapacity" name="busCapacity" required>
-                <button type="submit">Adicionar Ônibus</button>
-            </form>
-            <!-- Lista de Ônibus -->
-        </section>
-        <section id="relatorios" class="content-section hidden">
-            <h2>Relatórios</h2>
-            <!-- Conteúdo dos Relatórios -->
-        </section>
-    </main>
+    <div class="sidebar">
+        <div class="admin-title">
+            <h1>Administração da Frota</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" id="home-link">Início</a></li>
+                <li><a href="#fleet" id="fleet-link">Frota</a></li>
+                <li><a href="#manage" id="manage-link">Gerenciar</a></li>
+                <li><a href="#chat" id="chat-toggle">Chat</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div id="map"></div>
+        <div id="panel" class="hidden">
+            <section id="home-panel" class="panel-section hidden">
+                <h2>Início</h2>
+                
+            </section>
+            <section id="fleet-panel" class="panel-section hidden">
+                <h2>Frota</h2>
+                
+            </section>
+            <section id="manage-panel" class="panel-section hidden">
+                <h2>Gerenciar</h2>
+             
+            </section>
+            <section id="chat-panel" class="panel-section hidden">
+                <h2>Chat</h2>
+               
+                <div class="chat-container">
+                    <div class="messages">
+                      
+                    </div>
+                    <input type="text" id="chat-input" placeholder="Digite sua mensagem...">
+                    <button id="send-button">Enviar</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="scripts.js"></script>
-    <script>
-        function showSection(sectionId) {
-            // Esconde todas as seções
-            var sections = document.querySelectorAll('.content-section');
-            sections.forEach(function(section) {
-                section.classList.add('hidden');
-            });
-
-            // Mostra a seção clicada
-            var selectedSection = document.getElementById(sectionId);
-            selectedSection.classList.remove('hidden');
-
-            // Se a seção for Dashboard, inicializa o mapa
-            if (sectionId === 'dashboard') {
-                initMap();
-            }
-        }
-
-        function fetchAddress() {
-            var cep = document.getElementById('driverCEP').value.replace(/\D/g, '');
-
-            if (cep.length != 8) {
-                alert('CEP inválido. Por favor, insira um CEP válido com 8 dígitos.');
-                return;
-            }
-
-            var url = `https://viacep.com.br/ws/${cep}/json/`;
-
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.erro) {
-                        alert('CEP não encontrado. Por favor, insira um CEP válido.');
-                    } else {
-                        document.getElementById('driverAddress').value = `${data.logradouro}, ${data.bairro}, ${data.localidade} - ${data.uf}`;
-                    }
-                })
-                .catch(error => {
-                    console.error('Ocorreu um erro ao buscar o endereço:', error);
-                });
-        }
-
-        function initMap() {
-            // Posição inicial do mapa
-            var initialPosition = { lat: -19.9316, lng: -43.9417 }; // Av. Brasil, 2023 - Funcionários, Belo Horizonte - MG, 30140-002
-
-            // Inicialização do mapa
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15, // Zoom inicial
-                center: initialPosition // Posição inicial do mapa
-            });
-
-            // Adiciona marcador na posição inicial
-            var marker = new google.maps.Marker({
-                position: initialPosition,
-                map: map,
-                title: 'Localização Inicial'
-            });
-        }
-    </script>
-    <script src="colocar o mapa aqui"></script>
 </body>
 </html>
