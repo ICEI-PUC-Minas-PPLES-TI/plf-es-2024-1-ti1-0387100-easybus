@@ -1,0 +1,62 @@
+
+:root {
+    --cor-fundo: #000000; /* Cor de fundo escura */
+    --cor-texto: white; /* Cor de texto clara */
+    --cor-destaque: #FF9A00; /* Cor de destaque para botões e títulos */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    padding: 15px;
+    background-color: #73B5AA ;
+}
+.logo{
+    text-align: left;
+}
+.texto{
+    text-align: center;
+}
+.menu{
+    text-align: right;
+}
+
+/* Botões do cabeçalho */
+header nav a {
+    color: var(--cor-texto);
+    background-color: var(--cor-destaque);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+/* Título */
+.content .title {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Seção de detalhes */
+aside .details {
+    background-color: var(--cor-destaque);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Seção de imagem */
+main .arquivos {
+    background-color: var(--cor-destaque);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}

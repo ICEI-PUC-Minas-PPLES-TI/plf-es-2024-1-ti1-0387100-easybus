@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; }
+.navbar { background-color: #f0f0f0; padding: 10px; }
+.navbar a { margin-right: 15px; text-decoration: none; color: #333; }
+.report-item { border: 1px solid #ddd; margin-top: 10px; padding: 10px; display: flex; align-items: center; }
+.report-img { width: 50px; height: 50px; background-color: #ccc; margin-right: 10px; }
+.report-details { flex-grow: 1; }
+.report-details button { padding: 5px 10px; }
