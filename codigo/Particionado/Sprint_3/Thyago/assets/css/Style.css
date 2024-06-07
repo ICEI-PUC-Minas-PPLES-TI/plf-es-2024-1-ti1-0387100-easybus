@@ -5,3 +5,73 @@ body { font-family: Arial, sans-serif; }
 .report-img { width: 50px; height: 50px; background-color: #ccc; margin-right: 10px; }
 .report-details { flex-grow: 1; }
 .report-details button { padding: 5px 10px; }
+
+:root {
+    --cor-fundo: white; 
+    --cor-texto: black; 
+    --cor-destaque: #FF9A00; }
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: black;
+}
+.texto h1, .menu a {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.logo, .texto, .menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    justify-content: flex-start;
+}
+
+.menu {
+    justify-content: flex-end;
+}
+
+.texto, .menu {
+    color: white; 
+}
+
+header nav a {
+    color: var(--cor-texto);
+    background-color: var(--cor-destaque);
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+
+.content .title {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+aside .details {
+    background-color: var(--cor-destaque);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+main .arquivos {
+    background-color: var(--cor-destaque);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
