@@ -45,7 +45,7 @@ function atualizar() {
 
     form.reset(); 
 
-    window.location.href = "index_(joao).html";
+    window.location.href = "mostrar_motoristas.html";
     
 }
 

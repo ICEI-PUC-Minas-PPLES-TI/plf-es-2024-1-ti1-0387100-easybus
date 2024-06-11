@@ -14,7 +14,7 @@ function salvar() {
     localStorage.setItem("departamentos", JSON.stringify(departamentos));
 
     form.reset();
-    window.location.href = "index.html";
+    window.location.href = "index_(joao).html";
 }
 function obterID() {
 

@@ -42,9 +42,9 @@ function criarBotoesAcao() {
 
     const td = document.createElement("td");
 
-    const visualizarButton = criarBotao("Visualizar");
-    const editarButton = criarBotao("Editar");
-    const excluirButton = criarBotao("Excluir");
+    const visualizarButton = criarBotao("");
+    const editarButton = criarBotao("Detalhes");
+    const excluirButton = criarBotao("");
 
     visualizarButton.addEventListener("click", (event) => {
 
@@ -65,7 +65,7 @@ function criarBotoesAcao() {
         
         sessionStorage.setItem("idDepartamento", id);
 
-        window.location.href = "editar_(joao.html";
+        window.location.href = "editar_motoristas.html";
     });
 
     excluirButton.addEventListener("click", (event) => {
@@ -117,3 +117,4 @@ function buscarDepartamento(id, departamentos) {
 window.addEventListener("load", () => {
     carregarTabela();
 });
+
