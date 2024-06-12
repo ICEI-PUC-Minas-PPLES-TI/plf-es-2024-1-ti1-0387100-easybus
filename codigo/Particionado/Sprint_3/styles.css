@@ -1,0 +1,63 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .admin-title {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.bus-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bus {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.bus h3 {
+    margin: 0 0 10px;
+}
