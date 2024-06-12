@@ -1,0 +1,14 @@
+[
+    {
+        "nomeMotorista": "João",
+        "chapa": "XYZ1234",
+        "dataHora": "2024-06-12T14:32:02Z",
+        "fotoPerfil": "../assets/img/Logo EasyBus.png"
+    },
+    {
+        "nomeMotorista": "Maria",
+        "chapa": "ABC5678",
+        "dataHora": "2024-06-12T15:32:02Z",
+        "fotoPerfil": "../assets/img/Logo EasyBus.png"
+    }
+]
