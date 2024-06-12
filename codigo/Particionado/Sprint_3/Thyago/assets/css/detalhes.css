@@ -1,7 +1,7 @@
 :root {
-    --cor-fundo: white; 
-    --cor-texto: black; 
-    --cor-destaque: #FF9A00; 
+    --cor-fundo: white;
+    --cor-texto: black;
+    --cor-destaque: #FF9A00;
 }
 
 body {
@@ -18,14 +18,17 @@ header {
     background-color: black;
 }
 
-.texto h1, .menu a {
+.texto h1,
+.menu a {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
-.logo, .texto, .menu {
+.logo,
+.texto,
+.menu {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -40,7 +43,8 @@ header {
     justify-content: flex-end;
 }
 
-.texto, .menu {
+.texto,
+.menu {
     color: white;
 }
 
@@ -58,11 +62,13 @@ aside {
     left: 0;
     width: 20%;
     height: 100%;
-    background-color:#73B5AA;
+    background-color: #73B5AA;
     overflow: auto;
     padding: 10px;
 }
-aside,.h1 {
+
+aside,
+.h1 {
     text-align: center;
 }
 
@@ -74,12 +80,15 @@ aside,.h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.titulo, .detalhes, .arquivos {
+.titulo,
+.detalhes,
+.arquivos {
     margin-bottom: 20px;
 }
 
-.titulo p, .detalhes p, .arquivos p {
+.titulo p,
+.detalhes p,
+.arquivos p {
     font-size: 18px;
     color: var(--cor-texto);
 }
-

@@ -22,7 +22,7 @@ function criarElementoRegistro(motorista) {
         '<br>Data e hora: ' + formatarDataHora(motorista.dataHora) + '</div>';
 
     var direcionamento = document.createElement('div');
-    direcionamento.className = 'direcionamento botao'; 
+    direcionamento.className = 'direcionamento botao';
     direcionamento.innerHTML = '<a href="../views/detalhes.html">Detalhes</a>';
 
     var infoPerfil = document.createElement('div');
