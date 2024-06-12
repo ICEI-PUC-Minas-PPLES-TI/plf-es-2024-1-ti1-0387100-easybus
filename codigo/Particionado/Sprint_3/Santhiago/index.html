@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Easy Bus</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="title">ChatEasyBus</div>
+        <button id="backButton">Voltar</button>
+    </header>
+    <main>
+        <div class="chat-container">
+            <div class="messages-section">
+                <div class="message" id="message-template" style="display: none;">
+                    <span class="message-content"></span>
+                </div>
+            </div>
+            <div class="send-section">
+                <input type="text" id="recipient" placeholder="Destinatário" class="input-field">
+                <textarea id="messageInput" placeholder="Escreva sua mensagem..." class="input-field"></textarea>
+                <button id="sendButton">Enviar</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
