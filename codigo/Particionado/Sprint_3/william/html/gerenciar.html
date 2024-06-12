@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração de Frota de Ônibus</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="admin-title">
+            <h1>Administração da Frota</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html">Início</a></li>
+                <li><a href="#fleet" id="fleet-link">Frota</a></li>
+                <li><a href="#manage" id="manage-link">Gerenciar</a></li>
+                <li><a href="#chat" id="chat-toggle">Chat</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <div id="fleet-info">
+            <h2>Informações da Frota de Ônibus</h2>
+            <div class="bus-info" id="bus-101">
+                <h3>Número do Ônibus: 101</h3>
+                <p>Linha: Rota A</p>
+                <p>Horário: 08:00 - 10:00</p>
+                <p>Motorista: João Silva</p>
+                <div class="bus-details hidden">
+                    <p>Capacidade: 40 passageiros</p>
+                    <p>Última manutenção: 2023-05-15</p>
+                </div>
+            </div>
+            <div class="bus-info" id="bus-102">
+                <h3>Número do Ônibus: 102</h3>
+                <p>Linha: Rota B</p>
+                <p>Horário: 09:00 - 11:00</p>
+                <p>Motorista: Maria Souza</p>
+                <div class="bus-details hidden">
+                    <p>Capacidade: 35 passageiros</p>
+                    <p>Última manutenção: 2023-06-01</p>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
