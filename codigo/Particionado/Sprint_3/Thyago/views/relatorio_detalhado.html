@@ -19,28 +19,39 @@
 <body>
     <header>
         <div class="logo">
-            <img src="../assets/img/Logo EasyBus.png" width="150px">
+            <img src="../assets/img/Logo EasyBus.png" width="150px" alt="Logo da EasyBus">
         </div>
         <div class="posicionamento">
             <div class="texto">
-                <h1>Relatório</h1>
+                <h1>Relatórios</h1>
             </div>
             <nav class="menu">
-                <a href="../views/novo_relatorio.html">Novo relatório</a>
+                <a href="novo_relatorio.html">Novo relatório</a>
             </nav>
         </div>
         <div class="menu">
             <nav>
-                <a href="../views/relatorio_principal.html">Voltar</a>
+                <a href="relatorio_principal.html">voltar</a>
             </nav>
         </div>
     </header>
-    <p id="textoSalvo"></p>
-    <script src="../assets/js/relatorio_detalhado.js"></script>
+    <div class="dadosRelatorio">
+      <div id="dadosRelatorio"></div>  
+    </div>
     <script>
-        document.getElementById('textoSalvo').innerText = localStorage.getItem('texto');
-    </script>
+        fetch('../data/novo_relatorio.json')
+            .then(response => response.json())
+            .then(data => {
+                const conteudo = `
+                    <p><strong>Texto:</strong> ${data.texto}</p>
+                    <p><strong>De:</strong> ${data.de}</p>
+                    <p><strong>Para:</strong> ${data.para}</p>
+                    <p><strong>Horário:</strong> ${new Date(data.horario).toLocaleString()}</p>
+                `;
+                document.getElementById('dadosRelatorio').innerHTML = conteudo;
+            })
+            .catch(error => console.error('Erro ao carregar dados:', error));
+    </script>    
 </body>
-
 
 </html>

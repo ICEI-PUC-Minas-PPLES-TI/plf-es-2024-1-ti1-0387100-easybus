@@ -1,1 +1,0 @@
-document.getElementById('textoSalvo').innerText = localStorage.getItem('texto');

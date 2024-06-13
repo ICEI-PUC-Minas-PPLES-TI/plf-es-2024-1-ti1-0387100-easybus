@@ -9,7 +9,7 @@ function salvarTexto() {
 
         if (texto === '' || de === '') {
             alert('Por favor, preencha todos os campos antes de enviar.');
-            return; // Adicionado para parar a execução se os campos não estiverem preenchidos
+            return;
         }
 
         var relatorio = {
@@ -19,7 +19,7 @@ function salvarTexto() {
             dataHora: dataHora
         };
 
-        fetch('http://localhost:3000/', {
+        fetch('http://localhost:3000/relatorios', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,10 +34,20 @@ function salvarTexto() {
         })
         .then(data => {
             console.log('Relatório salvo com sucesso:', data);
-            window.open('../views/mensagem_relatorio.html'); // Abre a página em uma nova guia
+            window.location.href = '../views/mensagem_relatorio.html';
         })
         .catch((error) => {
             console.error('Ocorreu um erro:', error);
         });
     });
 }
+
+function redirecionarParaOutraPagina() {
+    window.location.href = "../views/mensagem_relatorio.html";
+  }
+  function salvarTexto() {
+    // ... seu código ...
+}
+
+// Chama a função salvarTexto quando a página é carregada
+salvarTexto();

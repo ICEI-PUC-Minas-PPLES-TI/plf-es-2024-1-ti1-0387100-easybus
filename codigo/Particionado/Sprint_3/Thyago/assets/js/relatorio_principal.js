@@ -1,4 +1,3 @@
-
 function formatarDataHora(dataHora) {
     var data = new Date(dataHora);
     return data.toLocaleDateString() + ' ' + data.toLocaleTimeString();

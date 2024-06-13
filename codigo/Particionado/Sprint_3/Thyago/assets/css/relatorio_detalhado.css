@@ -57,38 +57,18 @@ header nav a {
     margin: 0 5px;
 }
 
-aside {
-    position: fixed;
-    left: 0;
-    width: 20%;
-    height: 100%;
-    background-color: #73B5AA;
-    overflow: auto;
-    padding: 10px;
-}
-
-aside,
-.h1 {
-    text-align: center;
-}
-
-.container {
-    margin-left: 20%;
+.dadosRelatorio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* ou a largura que você preferir */
+    background-color: black; /* para a caixa preta */
+    color: white; /* para o texto dentro da caixa preta */
     padding: 20px;
-    width: 80%;
-    background-color: var(--cor-fundo);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.titulo,
-.detalhes,
-.arquivos {
-    margin-bottom: 20px;
-}
-
-.titulo p,
-.detalhes p,
-.arquivos p {
-    font-size: 18px;
-    color: var(--cor-texto);
+    border-radius: 5px; /* cantos arredondados, opcional */
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* sombra ao redor da caixa, opcional */
+    margin: 0 auto; /* adicionado para centralizar horizontalmente */
+    margin-top: 50px; /* empurra a caixa para baixo na página */
+    text-align: center;
 }
