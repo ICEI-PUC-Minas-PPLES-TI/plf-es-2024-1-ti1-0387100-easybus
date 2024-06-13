@@ -56,26 +56,27 @@ header nav a {
     border-radius: 5px;
     margin: 0 5px;
 }
+
 .orientação {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%; /* ou a largura que você preferir */
-    background-color: black; /* para a caixa preta */
-    color: white; /* para o texto dentro da caixa preta */
+    width: 50%;
+    background-color: black;
+    color: white;
     padding: 20px;
-    border-radius: 5px; /* cantos arredondados, opcional */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* sombra ao redor da caixa, opcional */
-    margin: 0 auto; /* adicionado para centralizar horizontalmente */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
     margin-top: 50px;
 }
 
 #meuFormulario {
-    background-color: black; /* para a caixa preta */
-    color: white; /* para o texto dentro da caixa preta */
+    background-color: black;
+    color: white;
     padding: 20px;
-    border-radius: 5px; /* cantos arredondados, opcional */
-    width: 100%; /* ajustado para preencher a div pai */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* sombra ao redor da caixa, opcional */
+    border-radius: 5px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
 }

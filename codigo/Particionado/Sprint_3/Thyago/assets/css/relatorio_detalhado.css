@@ -62,13 +62,13 @@ header nav a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%; /* ou a largura que você preferir */
-    background-color: black; /* para a caixa preta */
-    color: white; /* para o texto dentro da caixa preta */
+    width: 50%;
+    background-color: black;
+    color: white;
     padding: 20px;
-    border-radius: 5px; /* cantos arredondados, opcional */
-    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* sombra ao redor da caixa, opcional */
-    margin: 0 auto; /* adicionado para centralizar horizontalmente */
-    margin-top: 50px; /* empurra a caixa para baixo na página */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    margin-top: 50px;
     text-align: center;
 }

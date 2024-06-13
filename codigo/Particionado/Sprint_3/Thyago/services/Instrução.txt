@@ -1,23 +1,6 @@
-PS C:\Users\thyag\OneDrive\Documentos\GIT\EasyBus-TIAW> npm install -g json-server
->> 
-
-changed 56 packages in 9s
-
-17 packages are looking for funding
-  run `npm fund` for details
-PS C:\Users\thyag\OneDrive\Documentos\GIT\EasyBus-TIAW> json-server --watch C:\Users\thyag\OneDrive\Documentos\GIT\EasyBus-TIAW\codigo\Particionado\Sprint_3\Thyago\data\relatorio_principal.json                                                            
---watch/-w can be omitted, JSON Server 1+ watches for file changes by default
-JSON Server started on PORT :3000
-Press CTRL-C to stop
-Watching C:\Users\thyag\OneDrive\Documentos\GIT\EasyBus-TIAW\codigo\Particionado\Sprint_3\Thyago\data\relatorio_principal.json...
-
-( ˶ˆ ᗜ ˆ˵ )
+npm install -g json-server @0.17.4
+json-server --watch C:\Users\thyag\OneDrive\Documentos\GIT\EasyBus-TIAW\codigo\Particionado\Sprint_3\Thyago\data\relatorio_principal.json                                                            
 
 Index:
 http://localhost:3000/
 
-Static files:
-Serving ./public directory if it exists
-
-Endpoints:
-No endpoints found, try adding some data to C:\Users\thyag\OneDrive\Documentos\GIT\EasyBus-TIAW\codigo\Particionado\Sprint_3\Thyago\data\relatorio_principal.json

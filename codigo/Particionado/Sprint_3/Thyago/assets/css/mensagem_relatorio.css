@@ -1,6 +1,7 @@
 body {
     color: white;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@ body {
 }
 
 div {
-    display:flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
@@ -22,7 +23,8 @@ div {
     padding: 20px;
 }
 
-h1, p {
+h1,
+p {
     text-align: center;
     margin: 10px;
 }

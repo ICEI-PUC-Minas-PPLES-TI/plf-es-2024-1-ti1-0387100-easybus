@@ -1,5 +1,5 @@
 function salvarTexto() {
-    document.querySelector('form').addEventListener('submit', function(event) {
+    document.querySelector('form').addEventListener('submit', function (event) {
         event.preventDefault();
 
         var texto = document.getElementById('texto').value.trim();
@@ -26,28 +26,26 @@ function salvarTexto() {
             },
             body: JSON.stringify(relatorio),
         })
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Erro na resposta do servidor');
-            }
-            return response.json();
-        })
-        .then(data => {
-            console.log('Relatório salvo com sucesso:', data);
-            window.location.href = '../views/mensagem_relatorio.html';
-        })
-        .catch((error) => {
-            console.error('Ocorreu um erro:', error);
-        });
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Erro na resposta do servidor');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Relatório salvo com sucesso:', data);
+                window.location.href = '../views/mensagem_relatorio.html';
+            })
+            .catch((error) => {
+                console.error('Ocorreu um erro:', error);
+            });
     });
 }
 
 function redirecionarParaOutraPagina() {
     window.location.href = "../views/mensagem_relatorio.html";
-  }
-  function salvarTexto() {
-    // ... seu código ...
 }
+function salvarTexto() {
 
-// Chama a função salvarTexto quando a página é carregada
+}
 salvarTexto();
