@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Sistema de Gestão de Departamentos</title>
+    <link rel="stylesheet" href="css/motorista.css">
+    <title>Relatorio</title>
 </head>
 <body>
     <header>
-        <h1>Controle de Motoristas
-            <img src="img/file.enc" alt="">
-        </h1>
-        
+        <div class="titulo">
+            <h1>Relatorio EasyBus</h1>
+        </div>
+        <div class=navegaçao>
+            <h1>
+                <a href="index.html"> Novo Relatorio</a>
+            </h1>
+            <h1>
+                <a href="index.html">Voltar</a>
+            </h1>
+        </div>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="criar.html">Adicionar motorista</a>
-        <a href="mostrar_motoristas.html"> Relatorio</a>
-    </nav>
-    <main>
+     <main>
         <section id="departamentos">
             <header>
                 <h2>Motoristas</h2>
@@ -38,8 +40,7 @@
             </table>
         </section>
     </main>
-    <footer>
-    </footer>
-    <script src="js/main.js"></script>
-</body>
+    <script src="js/mostrar_motoristas.js"></script>
+    <div id="chart_div"></div>
+        
 </html>
