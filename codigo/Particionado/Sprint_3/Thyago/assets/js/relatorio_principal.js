@@ -23,7 +23,7 @@ function criarElementoRegistro(motorista) {
 
     var direcionamento = document.createElement('div');
     direcionamento.className = 'direcionamento botao';
-    direcionamento.innerHTML = '<a href="../views/detalhes.html">Detalhes</a>';
+    direcionamento.innerHTML = '<a href="../views/relatorio_detalhado.html">Detalhes</a>';
 
     var infoPerfil = document.createElement('div');
     infoPerfil.className = 'InfoPerfil';
@@ -38,11 +38,11 @@ function criarElementoRegistro(motorista) {
 
 
 function carregarDados() {
-    fetch('../data/dados.json')
+    fetch('../data/relatorio_principal.json')
         .then(response => response.json())
         .then(dados => {
             var secao = document.querySelector('main section');
-            secao.innerHTML = '';  // Limpar a seção
+            secao.innerHTML = '';
 
             for (var motorista of dados) {
                 var registro = criarElementoRegistro(motorista);

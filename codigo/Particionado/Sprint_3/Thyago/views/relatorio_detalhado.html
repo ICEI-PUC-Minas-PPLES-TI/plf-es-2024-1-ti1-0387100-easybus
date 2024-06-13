@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="../assets/css/detalhes.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/relatorio_detalhado.css">
 </head>
 
 <body>
@@ -23,31 +23,24 @@
         </div>
         <div class="posicionamento">
             <div class="texto">
-                <h1>Relatórios</h1>
+                <h1>Relatório</h1>
             </div>
             <nav class="menu">
-                <a href="#">Novo relatório</a>
+                <a href="../views/novo_relatorio.html">Novo relatório</a>
             </nav>
         </div>
         <div class="menu">
             <nav>
-                <a href="../views/index.html">Voltar</a>
+                <a href="../views/relatorio_principal.html">Voltar</a>
             </nav>
         </div>
     </header>
-    <aside>
-        <div class="arquivos">
-            <h3>Arquivos anexados:</h3>
-            <a><button>Baixar</button></a>
-        </div>
-    </aside>
-    <div class="container">
-        <div class="titulo">
-            <p>Título</p>
-        </div>
-        <div class="detalhes">
-            <p>Detalhes</p>
-        </div>
-    </div>
+    <p id="textoSalvo"></p>
+    <script src="../assets/js/relatorio_detalhado.js"></script>
+    <script>
+        document.getElementById('textoSalvo').innerText = localStorage.getItem('texto');
+    </script>
+</body>
+
 
 </html>
