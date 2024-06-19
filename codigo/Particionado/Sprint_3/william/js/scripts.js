@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ultimaManutencao: "2023-06-01",
             latlng: [-19.9199, -43.9388] 
         }
-       
+        
     ];
 
     let lastClickedBus = null; 
@@ -42,8 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function showBusInfo(bus) {
-        const fleetInfo = document.getElementById('fleet-info');
-        fleetInfo.innerHTML = `
+        const busInfoPopup = document.getElementById('bus-info-popup');
+        const busInfoContent = document.getElementById('bus-info-content');
+        busInfoContent.innerHTML = `
             <h2>Informações do Ônibus ${bus.id}</h2>
             <div class="bus-info">
                 <h3>Número do Ônibus: ${bus.id}</h3>
@@ -56,5 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
             </div>
         `;
+        busInfoPopup.classList.remove('hidden');
     }
+
+    document.getElementById('close-popup').addEventListener('click', function() {
+        document.getElementById('bus-info-popup').classList.add('hidden');
+    });
 });
