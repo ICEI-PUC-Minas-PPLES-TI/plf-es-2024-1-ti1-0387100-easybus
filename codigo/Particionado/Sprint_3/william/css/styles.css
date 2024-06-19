@@ -50,11 +50,10 @@ body {
 
 #map {
     width: 100%;
-    height: calc(100vh - 20px); 
-    margin-top: 20px;
+    height: 100vh;
 }
 
-.fleet-info-container {
+#bus-info-popup {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -64,27 +63,17 @@ body {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     padding: 20px;
     z-index: 1000;
-    max-height: calc(100vh - 40px); 
-    overflow-y: auto;
+}
+
+#close-popup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
 }
 
 .hidden {
     display: none;
-}
-
-.bus-info {
-    cursor: pointer;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.bus-info:hover {
-    background-color: #f0f0f0;
-}
-
-.bus-details {
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid #ccc;
 }
