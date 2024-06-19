@@ -1,0 +1,74 @@
+const incidentes = [
+    {
+        "titulo": "Incidente 1",
+        "descricao": "Descrição detalhada do incidente 1.",
+        "data": "2024-06-01",
+        "local": "Terminal Central",
+        "motorista": "João Silva",
+        "status": "Pendente"
+    },
+    {
+        "titulo": "Incidente 2",
+        "descricao": "Descrição detalhada do incidente 2.",
+        "data": "2024-06-02",
+        "local": "Rua das Flores",
+        "motorista": "Maria Souza",
+        "status": "Em Andamento"
+    },
+    {
+        "titulo": "Incidente 3",
+        "descricao": "Descrição detalhada do incidente 3.",
+        "data": "2024-06-03",
+        "local": "Avenida Brasil",
+        "motorista": "Carlos Santos",
+        "status": "Resolvido"
+    },
+    {
+        "titulo": "Incidente 4",
+        "descricao": "Descrição detalhada do incidente 4.",
+        "data": "2024-06-04",
+        "local": "Praça da Sé",
+        "motorista": "Ana Oliveira",
+        "status": "Em Andamento"
+    },
+    {
+        "titulo": "Incidente 5",
+        "descricao": "Descrição detalhada do incidente 5.",
+        "data": "2024-06-05",
+        "local": "Av. Paulista",
+        "motorista": "Ricardo Mendes",
+        "status": "Pendente"
+    },
+    {
+        "titulo": "Incidente 6",
+        "descricao": "Descrição detalhada do incidente 6.",
+        "data": "2024-06-06",
+        "local": "Terminal Rodoviário",
+        "motorista": "Fernanda Lima",
+        "status": "Resolvido"
+    },
+    {
+        "titulo": "Incidente 7",
+        "descricao": "Descrição detalhada do incidente 7.",
+        "data": "2024-06-07",
+        "local": "Ponte Estaiada",
+        "motorista": "Pedro Santos",
+        "status": "Pendente"
+    },
+    {
+        "titulo": "Incidente 8",
+        "descricao": "Descrição detalhada do incidente 8.",
+        "data": "2024-06-08",
+        "local": "Estação Ferroviária",
+        "motorista": "Mariana Oliveira",
+        "status": "Resolvido"
+    },
+    {
+        "titulo": "Incidente 9",
+        "descricao": "Descrição detalhada do incidente 9.",
+        "data": "2024-06-09",
+        "local": "Shopping Center",
+        "motorista": "Lucas Costa",
+        "status": "Em Andamento"
+    }
+];
