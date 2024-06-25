@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Frota</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <a href="admin.html" class="btn-voltar">Voltar</a>
+        <h1>Gerenciamento de Frota</h1>
+        <input type="text" id="busSearch" placeholder="Pesquisar ônibus...">
+    </div>
+    <div class="main-container">
+        <div class="fleet-container">
+            <div class="bus" onclick="showBusInfo(1)">
+                <p>Ônibus 1</p>
+                <div class="bus-info" id="busInfo1">
+                    <span class="close" onclick="closeBusInfo(1)">×</span>
+                    <h2>Informações do Ônibus</h2>
+                    <p id="busDetails1"></p>
+                </div>
+            </div>
+            <div class="bus" onclick="showBusInfo(2)">
+                <p>Ônibus 2</p>
+                <div class="bus-info" id="busInfo2">
+                    <span class="close" onclick="closeBusInfo(2)">×</span>
+                    <h2>Informações do Ônibus</h2>
+                    <p id="busDetails2"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
