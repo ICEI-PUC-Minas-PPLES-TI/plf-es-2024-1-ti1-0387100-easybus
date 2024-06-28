@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de relatorios da EasyBus">
+    <link rel="shortcut icon" href="../assets/img/Logo EasyBus.png" type="image/x-icon">
+    <title>EasyBus - Novo Relatorio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/css/novo_relatorio.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/img/Logo EasyBus.png" width="150px">
+        </div>
+        <div class="posicionamento">
+            <div class="texto">
+                <h1>Novo Relatório</h1>
+            </div>
+        </div>
+        <div class="menu">
+            <nav>
+                <a href="../views/relatorio_principal.html">Voltar</a>
+            </nav>
+        </div>
+    </header>
+    <div class="orientação">
+        <form id="meuFormulario">
+            <label for="texto">Preencha seu relatório: </label><br>
+            <input type="text" id="texto" name="texto"><br>
+            <label for="de">De: </label><br>
+            <input type="text" id="de" name="de"><br>
+            <label for="para">Para: </label><br>
+            <input type="text" id="para" name="para"><br>
+            <br>
+            <input type="button" value="Enviar" onclick="redirecionarParaOutraPagina()">
+        </form>
+    </div>
+    <script src="../assets/js/novo_relatorio.js"></script>
+
+</body>
+
+</html>

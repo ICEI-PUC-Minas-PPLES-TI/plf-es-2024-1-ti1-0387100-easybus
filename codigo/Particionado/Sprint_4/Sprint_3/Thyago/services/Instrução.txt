@@ -1,0 +1,6 @@
+npm install -g json-server @0.17.4
+json-server --watch C:\Users\thyag\OneDrive\Documentos\GIT\EasyBus-TIAW\codigo\Particionado\Sprint_3\Thyago\data\relatorio_principal.json                                                            
+
+Index:
+http://localhost:3000/
+

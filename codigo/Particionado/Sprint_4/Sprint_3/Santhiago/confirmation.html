@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Enviada - EasyBus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mensagem Enviada</h1>
+            <button id="backButton">Voltar</button>
+        </header>
+        <div class="content">
+            <div class="confirmation-message">
+                <p>Obrigado! Sua mensagem foi enviada com sucesso.</p>
+                <p><a href="index.html">Voltar à página inicial</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('backButton').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+}.navegaçao{
+    background-color: goldenrod;
+    display: flex;
+    justify-content: end;
+}
+.titulo{
+    background-color: goldenrod ;
+}
+a{
+    color: black;
+}
+h1{
+    padding: 20px;
+}
