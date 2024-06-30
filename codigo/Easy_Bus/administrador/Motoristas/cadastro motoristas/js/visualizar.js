@@ -1,20 +1,16 @@
-const nomeH2 = document.querySelector("h2");
-const descricaoP = document.querySelector("p");
+const nomeH2 = document.querySelector("#nome-dpto");
+const descricaoP = document.querySelector("#descricao-dpto");
 
 function exibirDetalhesDepartamento() {
     const id = sessionStorage.getItem("idDepartamento");
 
     let departamentos = JSON.parse(localStorage.getItem("departamentos")) || [];
+    let departamento = departamentos.find(d => d.id == id);
 
-    let departamento = departamentos.find((d) => { return d.id == id; } );
-
-    nomeH2.innerText = departamento.nome;
-
-    descricaoP.innerText = departamento.descricao;
+    if (departamento) {
+        nomeH2.innerText = departamento.nome;
+        descricaoP.innerText = departamento.descricao;
+    }
 }
 
-window.addEventListener("load", () => {
-
-    exibirDetalhesDepartamento();
-
-});
+window.addEventListener("load", exibirDetalhesDepartamento);

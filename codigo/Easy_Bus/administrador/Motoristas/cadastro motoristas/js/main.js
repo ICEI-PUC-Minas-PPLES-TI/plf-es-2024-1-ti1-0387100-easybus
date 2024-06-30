@@ -1,45 +1,30 @@
 const tbody = document.querySelector("tbody");
 
 function carregarTabela() {
-
     let departamentos = JSON.parse(localStorage.getItem("departamentos")) || [];
 
-    for (let i = 0; i < departamentos.length; i++) {
-        
-        const departamento = departamentos[i];
-
+    departamentos.forEach(departamento => {
         let tr = document.createElement("tr");
         tr.id = `departamento-${departamento.id}`;
-        const celulas = Object.values(departamento);
-
-        for (let j = 0; j < celulas.length; j++) {
-            
-            const td = document.createElement("td");
-            td.innerText = celulas[j];
+        Object.values(departamento).forEach(valor => {
+            let td = document.createElement("td");
+            td.innerText = valor;
             tr.appendChild(td);
-        }
-
+        });
         let tdAcao = criarBotoesAcao();
         tr.appendChild(tdAcao);
-
-        tbody.appendChild(tr);   
-    }
+        tbody.appendChild(tr);
+    });
 }
 
 function criarBotao(rotulo) {
-
     const botao = document.createElement("button");
-
     botao.type = "button";
-
     botao.innerText = rotulo;
-
     return botao; 
 }
 
- 
 function criarBotoesAcao() {
-
     const td = document.createElement("td");
 
     const visualizarButton = criarBotao("Visualizar");
@@ -47,32 +32,22 @@ function criarBotoesAcao() {
     const excluirButton = criarBotao("Excluir");
 
     visualizarButton.addEventListener("click", (event) => {
-
         const linha = event.target.parentElement.parentElement;
-        const celulas = linha.childNodes;
-        let id = parseInt(celulas[0].innerText);
-
+        const id = parseInt(linha.firstChild.innerText);
         sessionStorage.setItem("idDepartamento", id);
-
         window.location.href = "visualizar.html";
     });
 
     editarButton.addEventListener("click", (event) => {
-
         const linha = event.target.parentElement.parentElement;
-        const celulas = linha.childNodes;
-        let id = parseInt(celulas[0].innerText);
-        
+        const id = parseInt(linha.firstChild.innerText);
         sessionStorage.setItem("idDepartamento", id);
-
         window.location.href = "editar.html";
     });
 
     excluirButton.addEventListener("click", (event) => {
-
         const linha = event.target.parentElement.parentElement;
         excluir(linha);
-
     });
 
     td.appendChild(visualizarButton);
@@ -83,37 +58,18 @@ function criarBotoesAcao() {
 }
 
 function excluir(linha) {
-
-    const celulas = linha.childNodes;
-    let idDpto = parseInt(celulas[0].innerText);
-
+    const idDpto = parseInt(linha.firstChild.innerText);
     let departamentos = JSON.parse(localStorage.getItem("departamentos")) || [];
-
-    let indiceDptoExcluido = buscarDepartamento(idDpto, departamentos);
-
-    let confirmacao = confirm("Deseja excluir um departamento?");
-
-    if (confirmacao) {
-
+    const indiceDptoExcluido = buscarDepartamento(idDpto, departamentos);
+    if (confirm("Deseja excluir um departamento?")) {
         departamentos.splice(indiceDptoExcluido, 1);
-
         localStorage.setItem("departamentos", JSON.stringify(departamentos));
-
         linha.remove();
     }
 }
 
 function buscarDepartamento(id, departamentos) {
-
-    for (let i = 0; i < departamentos.length; i++) {
-        
-        if (departamentos[i].id == id)
-            return i;
-    }
-
-    return -1;
+    return departamentos.findIndex(departamento => departamento.id === id);
 }
 
-window.addEventListener("load", () => {
-    carregarTabela();
-});
+window.addEventListener("load", carregarTabela);

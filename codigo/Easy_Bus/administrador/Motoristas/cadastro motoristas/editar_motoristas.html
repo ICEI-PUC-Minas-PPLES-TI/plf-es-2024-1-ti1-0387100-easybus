@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/visualizar.css">
+    <link rel="stylesheet" href="css/editar_motoristas.css">
     <title>Sistema de Gestão de Departamentos</title>
 </head>
 <body>
     <header>
         <h1>Editar Motorista</h1>
     </header>
-    <nav><a href="mostrar_motoristas.html">Home</a>
+    <nav>
+        <a href="mostrar_motoristas.html">Home</a>
     </nav>
     <main>
         <section id="cadastro-departamento">
@@ -24,7 +25,7 @@
                     <input type="text" name="nome-dpto" id="nome-dpto" required>
                 </div>
                 <div>
-                    <label for="descricao-dpto">Descrição(CPF,Carro com placa,Horário)</label><br >
+                    <label for="descricao-dpto">Descrição (CPF, Carro com placa, Horário)</label><br>
                     <textarea id="descricao-dpto" name="descricao-dpto" rows="4" required></textarea>
                 </div>
                 <button type="button" onclick="atualizar()">Atualizar</button>
@@ -34,6 +35,6 @@
     <footer>
         <a href="mostrar_motoristas.html">Voltar</a>
     </footer>
-    <script src="js/visualizar.js"></script>
+    <script src="js/editar_motoristas.js"></script>
 </body>
 </html>
