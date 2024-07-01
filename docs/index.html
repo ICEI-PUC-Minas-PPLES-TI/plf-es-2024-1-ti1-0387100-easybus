@@ -954,7 +954,7 @@
         <!-- Funcionalidades ==================== -->
         <section id="ti_solucao">
           <h2>Solução</h2>
-          <p class="lead">Esta seção apresenta todos os detalhes da solução criada no projeto.
+          <p class="lead">Esta seção apresentaremos todos os detalhes da solução criada.
             <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse"
               href="#collapseSolucao">Info</button>
           </p>
@@ -967,7 +967,7 @@
 
           <section id="ti_video">
             <h4>Video do Projeto</h4>
-            <p>O vídeo a seguir traz uma apresentação do problema que a equipe está tratando e a proposta de solução.
+            <p>O vídeo a seguir traz um breve resumo da apresentação do problema e a nossa proposta de solução.
               <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse"
                 href="#collapseVideo">Info</button>
             </p>
@@ -977,126 +977,207 @@
                 direta.</p>
               <p>Utilize o recurso de compartilhamento via embed e inclua o vídeo logo abaixo.</p>
             </div>
-            <p>...... COLOQUE AQUI O SEU VIDEO ......</p>
-      
-            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Tw0GcR4k1oY?si=exQOXTWybWFsy6QX"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-          <section id="ti_funcionalidades">
-            <h4>Funcionalidades</h4>
-            <p>Esta seção apresenta as funcionalidades da solução.
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse"
-                href="#collapseFuncionalidades">Info</button>
-            </p>
-            <div class="alert alert-warning collapse" role="alert" id="collapseFuncionalidades">
-              <p>Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos
-                administradores da solução.</p>
-              <p>Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura
-                de dados associada; (3) o detalhe sobre as instruções de acesso e uso.</p>
-            </div>
+            <section id="ti_funcionalidades">
+              <h4>Funcionalidades</h4>
+              <p>Esta seção apresenta as funcionalidades da solução.
+                <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse"
+                  href="#collapseFuncionalidades">Info</button>
+              </p>
+              <div class="alert alert-warning collapse" role="alert" id="collapseFuncionalidades">
+                <p>Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos
+                  administradores da solução.</p>
+                <p>Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2)
+                  Estrutura
+                  de dados associada; (3) o detalhe sobre as instruções de acesso e uso.</p>
+              </div>
 
+              <section>
+                <h5>Funcionalidade 1 - Controle de frota</h5>
+                <p>Permite a inclusão, leitura, alteração e exclusão de onibus da frota.</p>
+                <ul class="list-unstyled">
+                  <li><strong>Estrutura de dados: </strong><a
+                      href="../codigo/Easy_Bus/administrador/Principal/scripts.js">Contatos</a></li>
+                  <li><strong>Instruções de acesso: </strong>
+                    <ul>
+                      <li>Abra o site e efetue o login</li>
+                      <li>Acesse o menu principal e escolha a opção frota </li>
+                    </ul>
+                  </li>
+                </ul>
+                <p class="text-center"><img class="img-fluid"
+                    src="../codigo/Entrega final/img_sistema/Tela principal.png" alt="Tela Cadastro de Contatos"></p>
+                <p class="text-center"><img class="img-fluid"
+                    src="../codigo/Entrega final/img_sistema/Frota_cadastro.png" alt="Tela Cadastro de Contatos"></p>
+              </section>
+            </section>
             <section>
-              <h5>Funcionalidade 1 - Cadastro de Contatos<span class="exemplo">EXEMPLO</span></h5>
-              <p>Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema</p>
+              <h5>Funcionalidade 2 - Controle de incidentes</h5>
+              <p>Permite a inclusão, leitura, alteração e exclusão de incidentes.</p>
               <ul class="list-unstyled">
-                <li><strong>Estrutura de dados: </strong><a href="#ti_ed_contatos">Contatos</a></li>
+                <li><strong>Estrutura de dados: </strong><a
+                    href="../codigo/Easy_Bus/administrador/incidentes/incidentes.json">incidentes</a></li>
                 <li><strong>Instruções de acesso: </strong>
                   <ul>
                     <li>Abra o site e efetue o login</li>
-                    <li>Acesse o menu principal e escolha a opção Cadastros </li>
-                    <li>Em seguida, escolha a opção Contatos</li>
+                    <li>Acesse o menu principal e escolha a opção incidentes</li>
                   </ul>
                 </li>
               </ul>
-              <p class="text-center"><img class="img-fluid" src="assets/images/exemplo-funcionalidade.png"
+              <p class="text-center"><img class="img-fluid" src="../codigo/Entrega final/img_sistema/Tela principal.png"
+                  alt="Tela Cadastro de Contatos"></p>
+              <p class="text-center"><img class="img-fluid" src="../codigo/Entrega final/img_sistema/Incidentes.png"
                   alt="Tela Cadastro de Contatos"></p>
             </section>
           </section>
+          <section>
+            <h5>Funcionalidade 3 - Controle de relatorios</h5>
+            <p>Permite a inclusão, leitura, alteração e exclusão de relatorios.</p>
+            <ul class="list-unstyled">
+              <li><strong>Estrutura de dados: </strong><a
+                  href="../codigo/Easy_Bus/administrador/ocorencias/data/relatorio_principal.json">relatorios</a></li>
+              <li><strong>Instruções de acesso: </strong>
+                <ul>
+                  <li>Abra o site e efetue o login</li>
+                  <li>Acesse o menu principal e escolha a opção relatorio</li>
+                </ul>
+              </li>
+            </ul>
+            <p class="text-center"><img class="img-fluid" src="../codigo/Entrega final/img_sistema/Tela principal.png"
+                alt="Tela Cadastro de Contatos"></p>
+            <p class="text-center"><img class="img-fluid" src="../codigo/Entrega final/img_sistema/Relatorio.png"
+                alt="Tela Cadastro de Contatos"></p>
+          </section>
+        </section>
+        <section>
+          <h5>Funcionalidade 4 - Controle de motoristas</h5>
+          <p>Permite a inclusão, leitura, alteração e exclusão de motoristas.</p>
+          <ul class="list-unstyled">
+            <li><strong>Estrutura de dados: </strong><a
+                href="../codigo/Easy_Bus/administrador/Motoristas/cadastro motoristas/js/visualizar.js">motoristas</a>
+            </li>
+            <li><strong>Instruções de acesso: </strong>
+              <ul>
+                <li>Abra o site e efetue o login</li>
+                <li>Acesse o menu principal e escolha a opção motoristas</li>
+              </ul>
+            </li>
+          </ul>
+          <p class="text-center"><img class="img-fluid" src="../codigo/Entrega final/img_sistema/Tela principal.png"
+              alt="Tela Cadastro de Contatos"></p>
+          <p class="text-center"><img class="img-fluid" src="../codigo/Entrega final/img_sistema/motoristas.png"
+              alt="Tela Cadastro de Contatos"></p>
+        </section>
+        </section>
 
-          <!-- Estruturas de dados =============== -->
-          <section id="ti_estruturas_dados">
-            <h4>Estruturas de Dados</h4>
-            <p>Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse"
-                href="#collapseEstruturas">Info</button>
-            </p>
-            <div class="alert alert-warning collapse" role="alert" id="collapseEstruturas">
-              <p>Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da
-                aplicação quanto outras estruturas que foram criadas para algum tipo de configuração</p>
-              <p>Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.</p>
-            </div>
 
-            <section>
-              <h5>Estrutura de Dados - Contatos<span class="exemplo">EXEMPLO</span></h5>
-              <p>Contatos da aplicação</p>
-              <pre>
-                  {
-                    "id": 1,
-                    "nome": "Leanne Graham",
-                    "cidade": "Belo Horizonte",
-                    "categoria": "amigos",
-                    "email": "Sincere@april.biz",
-                    "telefone": "1-770-736-8031",
-                    "website": "hildegard.org"
+        <!-- Estruturas de dados =============== -->
+        <section id="ti_estruturas_dados">
+          <h4>Estruturas de Dados</h4>
+          <p>Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.
+            <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse"
+              h+ref="#collapseEstruturas">Info</button>
+          </p>
+          <div class="alert alert-warning collapse" role="alert" id="collapseEstruturas">
+            <p>Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da
+              aplicação quanto outras estruturas que foram criadas para algum tipo de configuração</p>
+            <p>Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.</p>
+          </div>
+
+          <section>
+            <h5>Estrutura de Dados - Onibus</h5>
+            <p>registro de onibus da aplicação</p>
+            <pre>
+                {
+                  "Onibus1": {
+                    "Informacoes do Onibus": {
+                      "Piloto": "João da Silva",
+                      "Número do Ônibus": "12345",
+                      "Capacidade": "35 passageiros",
+                      "Horário": ["06:00", "22:00"],
+                      "Outras Informações": ["Ar condicionado", "WIFI", "Acessibilidade"]
+                    }
+                  },
+                  "Onibus2": {
+                    "Informacoes do Onibus": {
+                      "Piloto": "Maria de Oliveira",
+                      "Número do Ônibus": "54321",
+                      "Capacidade": "50 passageiros",
+                      "Horário": ["07:00", "23:00"],
+                      "Outras Informações": ["Ar condicionado", "WIFI"]
+                    }
                   }
+                }
+                
                 </pre>
-            </section>
-
-            <section>
-              <h5>Estrutura de Dados - Usuários<span class="exemplo">EXEMPLO</span></h5>
-              <p>Registro dos usuários do sistema utilizados para login e para o perfil do sistema</p>
-              <pre>
-                  {
-                    id: "eed55b91-45be-4f2c-81bc-7686135503f9"
-                    email: "admin@abc.com"
-                    id: "eed55b91-45be-4f2c-81bc-7686135503f9"
-                    login: "admin"
-                    nome: "Administrador do Sistema"
-                    senha: "123"
-                  }
-                </pre>
-            </section>
           </section>
 
-          <!-- Módulos e APIs ================= -->
-          <section id="ti_modulos_apis">
-            <h4>Módulos e APIs</h4>
-            <p>Esta seção apresenta os módulos e APIs utilizados na solução.
-              <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse"
-                href="#collapseModulos">Info</button>
-            </p>
-            <div class="alert alert-warning collapse" role="alert" id="collapseModulos">
-              <p>Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1)
-                Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas
-                para acesso a dados, serviços, etc.</p>
-            </div>
-
-            <section>
-              <h5>Images:</h5>
-              <ul>
-                <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a><span
-                    class="exemplo">EXEMPLO</span></li>
-              </ul>
-            </section>
-
-            <section>
-              <h5>Fonts:</h5>
-              <ul>
-                <li>Icons Font Face - <a target="_blank"
-                    href="https://fontawesome.com/">https://fontawesome.com/</a><span class="exemplo">EXEMPLO</span>
-                </li>
-              </ul>
-            </section>
-
-            <section>
-              <h5>Scripts:</h5>
-              <ul>
-                <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a><span
-                    class="exemplo">EXEMPLO</span></li>
-                <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a><span
-                    class="exemplo">EXEMPLO</span></li>
-              </ul>
-            </section>
+          <section>
+            <h5>Estrutura de Dados - Motoristas</h5>
+            <p>Registro dos usuários do sistema utilizados para os motoristas:</p>
+            <pre>
+                {
+                  "motoristas": [
+                    {
+                      "id": 1,
+                      "nome": "THIYAGO MARQUES",
+                      "descrição": {
+                        "cpf": "1528711116",
+                        "porcentagem_comissão": "30%",
+                        "iniciais_garagem": "GDN",
+                        "placa_veículo": "N58.0",
+                        "data_registro": "23/04/08"
+                      }
+                    }
+                  ]
+                }
+                
+                </pre>
           </section>
+        </section>
+
+        <!-- Módulos e APIs ================= -->
+        <section id="ti_modulos_apis">
+          <h4>Módulos e APIs</h4>
+          <p>Esta seção apresenta os módulos e APIs utilizados na solução.
+            <button type="button" class="btn btn-light btn-sm float-right" data-toggle="collapse"
+              href="#collapseModulos">Info</button>
+          </p>
+          <div class="alert alert-warning collapse" role="alert" id="collapseModulos">
+            <p>Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1)
+              Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas
+              para acesso a dados, serviços, etc.</p>
+          </div>
+
+          <section>
+            <h5>Images:</h5>
+            <ul>
+              <li>Unsplash - <a target="_blank" href="https://unsplash.com/">https://unsplash.com/</a></li>
+              <li>Unsplash - <a target="_blank"
+                  href="https://thispersondoesnotexist.com/">https://thispersondoesnotexist.com/</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h5>Fonts:</h5>
+            <ul>
+              <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h5>Scripts:</h5>
+            <ul>
+              <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
+              <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+            </ul>
+          </section>
+        </section>
 
         </section>
         <hr class="divider">
@@ -1114,47 +1195,41 @@
               questões sobre a manutenção da aplicação; (4) detalhes sobre a integração da aplicação com outros
               sistemas; (5) questões sobre a segurança da aplicação.</p>
           </div>
-
-          <span class="exemplo">EXEMPLO</span>
           <div class="row">
             <div class="col-lg-12">
               <div class="accordion accordion-alterate arrow-right" id="popularTopics">
                 <div class="card">
                   <div class="card-header" id="heading1">
                     <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse1"
-                        aria-expanded="false" aria-controls="collapse1">What does royalty free mean?</a> </h5>
+                        aria-expanded="false" aria-controls="collapse1">O que é a EasyBus ?</a> </h5>
                   </div>
                   <div id="collapse1" class="collapse" aria-labelledby="heading1" data-parent="#popularTopics">
-                    <div class="card-body"> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a type specimen book. It has survived not
-                      only five centuries, but also the leap into electronic typesetting, remaining essentially
-                      unchanged. </div>
+                    <div class="card-body"> A EasyBus é uma solução proposta para problemas cotidianos comuns a muitas
+                      pessoas. Nosso foco é atender a um nicho de mercado muito necessário: o de sistemas de gestão
+                      exclusivos para empresas de ônibus. Isso proporciona maior confiança e eficiência às operações
+                    </div>
                   </div>
                 </div>
                 <div class="card">
                   <div class="card-header" id="heading2">
                     <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse2"
-                        aria-expanded="false" aria-controls="collapse2">What is a single application?</a> </h5>
+                        aria-expanded="false" aria-controls="collapse2">O que fazemos ?</a> </h5>
                   </div>
                   <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#popularTopics">
-                    <div class="card-body"> Iisque Anim pariatur cliche reprehenderit, enim eiusmod high life
-                      accusamus terry richardson ad squid. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
-                      moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                      et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
-                      proident. Ad vegan excepteur butcher vice lomo. </div>
+                    <div class="card-body"> A Easy Bus auxilia empresas de transporte urbano a se manterem organizadas
+                      e eficientes, otimizando processos e reduzindo custos. Nosso foco é oferecer um sistema completo
+                      de gestão.</div>
                   </div>
                 </div>
                 <div class="card">
                   <div class="card-header" id="heading3">
                     <h5 class="mb-0"> <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapse3"
-                        aria-expanded="false" aria-controls="collapse3">What are some examples of permitted end
-                        products?</a> </h5>
+                        aria-expanded="false" aria-controls="collapse3">Para quem ela faz?</a> </h5>
                   </div>
                   <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#popularTopics">
-                    <div class="card-body"> Iisque persius interesset his et, in quot quidam persequeris vim, ad mea
-                      essent possim iriure. Mutat tacimates id sit. Ridens mediocritatem ius an, eu nec magna
-                      imperdiet. </div>
+                    <div class="card-body">Atendemos empresas de ônibus que operam no transporte urbano. Nosso
+                      objetivo é garantir o bem-estar da sua empresa e dos seus passageiros, oferecendo uma solução
+                      completa para viagens municipais</div>
                   </div>
                 </div>
               </div>
@@ -1179,10 +1254,10 @@
           </p>
           <div class="alert alert-warning collapse" role="alert" id="collapseReferencias">
             <p>Apresente as referências bibliográficas utilizadas no projeto. Inclua itens como: (1) livros, artigos,
-              tutoriais, etc. utilizados no desenvolvimento da solução; (2) links para sites, blogs, etc. utilizados no
+              tutoriais, etc. utilizados no desenvolvimento da solução; (2) links para sites, blogs, etc. utilizados
+              no
               desenvolvimento da solução.</p>
           </div>
-          <p>...... COLOQUE AQUI O SEU TEXTO ......</p>
         </section>
 
       </div>
