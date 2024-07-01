@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administração de Frota de Ônibus</title>
+    <meta name="description" content="EasyBus">
+    <link rel="shortcut icon" href="../ocorencias/assets/img/Logo EasyBus.png" type="image/x-icon">
+    <title>EasyBus - Administração</title>
     <link rel="stylesheet" href="css2.css">
+    <link rel="stylesheet" href="pagina_principal.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
 </head>
+
 <body>
+
     <div class="sidebar">
+        <img src="../ocorencias/assets/img/Logo EasyBus.png" class="avatar">
         <div class="admin-title">
-            <h1>Administração da Frota</h1>
+            <h1>EasyBus</h1>
+            <p><a class="saida" href="../../Interface de vendas/index.html">sair</a></p>
         </div>
         <nav>
+            <a href="#" id="home-link"></a>
+            <a href="#" id="chat-toggle"></a>
             <ul>
-                <li><a href="../../Interface de vendas/index.html" id="home-link">Sair</a></li>
                 <li><a href="gerenciar.html" id="fleet-link">Frota</a></li>
-                <li><a href="../ocorencias/views/relatorio_principal.html" id="chat-toggle">ocorencias</a></li>
-                <li><a href="../incidentes/index.html" id="chat-toggle">incidentes</a></li>
-                <li><a href="../../administrador/Motoristas/cadastro motoristas/index.html" id="chat-toggle">motoristas</a></li>
-                <li><a href="../../Interface de vendas/index.html" id="chat-toggle">sair</a></li>
+                <li><a href="../incidentes/index.html">incidentes</a></li>
+                <li><a href="../ocorencias/views/relatorio_principal.html">relatorios</a></li>
+                <li><a href="../../administrador/Motoristas/cadastro motoristas/index.html">motoristas</a></li>
             </ul>
         </nav>
     </div>
@@ -45,4 +53,5 @@
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="jv2.js"></script>
 </body>
+
 </html>

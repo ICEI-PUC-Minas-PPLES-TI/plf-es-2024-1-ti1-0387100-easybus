@@ -20,7 +20,7 @@ body {
 .admin-title {
     text-align: center;
     margin-bottom: 20px;
-    padding: 10px 10px;
+    padding: 10px;
 }
 
 .sidebar nav ul {
@@ -39,7 +39,6 @@ body {
     color: white;
     text-decoration: none;
     display: block;
-    width: 100%;
     padding: 10px 0;
 }
 
@@ -60,7 +59,7 @@ body {
     width: 300px;
     background: white;
     border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     padding: 20px;
     z-index: 1000;
 }
@@ -114,4 +113,16 @@ body {
 
 #send-button:hover {
     background-color: #34495e;
+}
+
+.sidebar img.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.saida {
+    text-decoration: none;
+    color: white;
 }

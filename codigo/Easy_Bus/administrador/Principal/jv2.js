@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     fleetLink.addEventListener('click', (e) => {
-        // Não impedir o comportamento padrão para que o link funcione
+     
     });
 
     chatToggle.addEventListener('click', (e) => {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const map = L.map('map').setView([-23.5505, -46.6333], 12); 
+    const map = L.map('map').setView([-19.9242259,-43.9469811], 12); 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
