@@ -45,7 +45,5 @@ function salvarTexto() {
 function redirecionarParaOutraPagina() {
     window.location.href = "../views/mensagem_relatorio.html";
 }
-function salvarTexto() {
 
-}
 salvarTexto();
