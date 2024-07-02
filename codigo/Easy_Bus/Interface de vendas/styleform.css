@@ -20,42 +20,44 @@ body{
 }
 
 .container{
-    max-width: 1280px;
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
-    padding: 6%;
+    padding: 40px;
 }
 
 form{
     background: #fff;
-    max-width: 500px;
-    height: 450px;
+    max-width: 100%;
+    height: auto;
     padding: 40px;
     border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 form h1{
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #ff9a00;
     font-size: 22pt;
 }
 
 form p{
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 form .input-single{
     position: relative;
-    margin: 30px 0;
+    margin-bottom: 30px;
 }
 
 form .input-single label{
     position: absolute;
-    left: 0;
+    left: 10px;
     bottom: 5px;
     cursor: text;
-    transition: all 0.5s;
+    transition: all 0.3s;
     color: #ff9a00;
 }
 
@@ -64,12 +66,13 @@ form .input-single .input{
     border: 0;
     border-bottom: 2px solid #ff9a00;
     padding: 5px;
-    outline: 0;
+    outline: none;
     font-size: 16px;
+    transition: border-bottom-color 0.3s;
 }
 
 form .input-single .input:focus{
-    border-bottom: 2px solid #ff9a00;
+    border-bottom-color: #ff9a00;
 }
 
 form .input-single .input:focus ~ label,
@@ -80,11 +83,10 @@ form .input-single .input:valid ~ label{
 }
 
 .btn{
-    width: 100%;
     text-align: center;
 }
 
-form input[type=submit]{
+form button[type=submit]{
     padding: 10px 40px;
     border: 0;
     border-radius: 10px;
@@ -92,5 +94,10 @@ form input[type=submit]{
     color: #fff;
     font-size: 14pt;
     cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+form button[type=submit]:hover{
+    background-color: #fff;
+    color: #ff9a00;
+}

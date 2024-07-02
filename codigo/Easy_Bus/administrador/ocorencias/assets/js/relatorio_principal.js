@@ -35,7 +35,6 @@ function criarElementoRegistro(motorista) {
     return registro;
 }
 
-
 function carregarDados() {
     fetch('../data/relatorio_principal.json')
         .then(response => response.json())

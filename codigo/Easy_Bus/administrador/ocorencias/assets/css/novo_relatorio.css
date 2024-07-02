@@ -1,6 +1,6 @@
 :root {
-    --cor-fundo: white;
-    --cor-texto: black;
+    --cor-fundo: black;
+    --cor-texto: white;
     --cor-destaque: #FF9A00;
 }
 
@@ -16,6 +16,7 @@ header {
     align-items: center;
     padding: 15px;
     background-color: black;
+    border-bottom: 2px solid var(--cor-destaque);
 }
 
 .texto h1,
@@ -49,34 +50,69 @@ header {
 }
 
 header nav a {
-    color: var(--cor-texto);
+    color: var(--cor-fundo);
     background-color: var(--cor-destaque);
     padding: 5px 10px;
     text-decoration: none;
     border-radius: 5px;
     margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.orientação {
+header nav a:hover {
+    background-color: white;
+    color: var(--cor-destaque);
+}
+
+.orientacao {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
-    background-color: black;
-    color: white;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     margin: 0 auto;
     margin-top: 50px;
 }
 
 #meuFormulario {
-    background-color: black;
-    color: white;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     padding: 20px;
     border-radius: 5px;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     text-align: center;
+}
+
+input[type="text"] {
+    background-color: black;
+    border: 1px solid var(--cor-destaque);
+    color: var(--cor-texto);
+    padding: 10px;
+    width: calc(100% - 22px);
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+input[type="button"] {
+    background-color: var(--cor-destaque);
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: white;
+    color: var(--cor-destaque);
+}
+
+label {
+    color: var(--cor-destaque);
 }
