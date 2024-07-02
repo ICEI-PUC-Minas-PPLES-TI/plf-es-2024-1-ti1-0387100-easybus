@@ -981,7 +981,9 @@
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+            <br><br>
+            <!-- o video também se encontra em midia .mp4 na pasta ../codigo/Entrega final/EasyBus.mp4  -->
+            <p><a href="../codigo/Entrega final/EasyBus.mp4">Clique aqui para ver o arquivo .MP4</a></p>
             <section id="ti_funcionalidades">
               <h4>Funcionalidades</h4>
               <p>Esta seção apresenta as funcionalidades da solução.
@@ -1089,53 +1091,106 @@
           </div>
 
           <section>
-            <h5>Estrutura de Dados - Onibus</h5>
-            <p>registro de onibus da aplicação</p>
+            <h5>Estrutura de Dados - incidentes</h5>
+            <p>registro dos incidentes na aplicação</p>
             <pre>
-                {
-                  "Onibus1": {
-                    "Informacoes do Onibus": {
-                      "Piloto": "João da Silva",
-                      "Número do Ônibus": "12345",
-                      "Capacidade": "35 passageiros",
-                      "Horário": ["06:00", "22:00"],
-                      "Outras Informações": ["Ar condicionado", "WIFI", "Acessibilidade"]
-                    }
-                  },
-                  "Onibus2": {
-                    "Informacoes do Onibus": {
-                      "Piloto": "Maria de Oliveira",
-                      "Número do Ônibus": "54321",
-                      "Capacidade": "50 passageiros",
-                      "Horário": ["07:00", "23:00"],
-                      "Outras Informações": ["Ar condicionado", "WIFI"]
-                    }
-                  }
-                }
-                
+              const incidentes = [
+              {
+                  "titulo": "Incidente 1",
+                  "descricao": "Descrição detalhada do incidente 1.",
+                  "data": "2024-06-01",
+                  "local": "Terminal Central",
+                  "motorista": "João Silva",
+                  "status": "Pendente"
+              },
+              {
+                  "titulo": "Incidente 2",
+                  "descricao": "Descrição detalhada do incidente 2.",
+                  "data": "2024-06-02",
+                  "local": "Rua das Flores",
+                  "motorista": "Maria Souza",
+                  "status": "Em Andamento"
+              },
+              {
+                  "titulo": "Incidente 3",
+                  "descricao": "Descrição detalhada do incidente 3.",
+                  "data": "2024-06-03",
+                  "local": "Avenida Brasil",
+                  "motorista": "Carlos Santos",
+                  "status": "Resolvido"
+              },
+              {
+                  "titulo": "Incidente 4",
+                  "descricao": "Descrição detalhada do incidente 4.",
+                  "data": "2024-06-04",
+                  "local": "Praça da Sé",
+                  "motorista": "Ana Oliveira",
+                  "status": "Em Andamento"
+              },
+              {
+                  "titulo": "Incidente 5",
+                  "descricao": "Descrição detalhada do incidente 5.",
+                  "data": "2024-06-05",
+                  "local": "Av. Paulista",
+                  "motorista": "Ricardo Mendes",
+                  "status": "Pendente"
+              },
+              {
+                  "titulo": "Incidente 6",
+                  "descricao": "Descrição detalhada do incidente 6.",
+                  "data": "2024-06-06",
+                  "local": "Terminal Rodoviário",
+                  "motorista": "Fernanda Lima",
+                  "status": "Resolvido"
+              },
+              {
+                  "titulo": "Incidente 7",
+                  "descricao": "Descrição detalhada do incidente 7.",
+                  "data": "2024-06-07",
+                  "local": "Ponte Estaiada",
+                  "motorista": "Pedro Santos",
+                  "status": "Pendente"
+              },
+              {
+                  "titulo": "Incidente 8",
+                  "descricao": "Descrição detalhada do incidente 8.",
+                  "data": "2024-06-08",
+                  "local": "Estação Ferroviária",
+                  "motorista": "Mariana Oliveira",
+                  "status": "Resolvido"
+              },
+              {
+                  "titulo": "Incidente 9",
+                  "descricao": "Descrição detalhada do incidente 9.",
+                  "data": "2024-06-09",
+                  "local": "Shopping Center",
+                  "motorista": "Lucas Costa",
+                  "status": "Em Andamento"
+              }
+          ];
+          
                 </pre>
           </section>
 
           <section>
-            <h5>Estrutura de Dados - Motoristas</h5>
-            <p>Registro dos usuários do sistema utilizados para os motoristas:</p>
+            <h5>Estrutura de Dados - ocorencias</h5>
+            <p>Registro de ocorencias do sistema:</p>
             <pre>
-                {
-                  "motoristas": [
-                    {
-                      "id": 1,
-                      "nome": "THIYAGO MARQUES",
-                      "descrição": {
-                        "cpf": "1528711116",
-                        "porcentagem_comissão": "30%",
-                        "iniciais_garagem": "GDN",
-                        "placa_veículo": "N58.0",
-                        "data_registro": "23/04/08"
-                      }
-                    }
-                  ]
-                }
-                
+              {
+                "texto": "Passageiro thyago marques correa, CPF 152.817.116-01, passou mal durante a viagem que teve que ser encerrada, para levar o passageiro para a UPA Venda Nova.",
+                "de": "Gabriel",
+                "para": "Garagem",
+                "horario": "2024-06-13T15:00:00"
+              }
+
+          [
+              {
+                  "nomeMotorista": "Gabriel",
+                  "chapa": "ABC-1234",
+                  "dataHora": "2024-06-13T17:57:54Z",
+                  "fotoPerfil": "../assets/img/joao.jpeg"
+              }
+          ]
                 </pre>
           </section>
         </section>
