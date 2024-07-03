@@ -1,31 +1,27 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: EasyBus
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Marques Correa
+    given-names: Thyago
+  - family-names: Takaesu Sampaio
+    given-names: Santhiago
+  - family-names: Matheus Meira da Silva
+    given-names: William 
+  - family-names: Pedro Gomes Ruas
+    given-names: João 
+  - family-names: Silva Tavares
+    given-names:Cleiton 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Vieira Carneiro 
+    given-names: Rommel 
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
 keywords:
-  - 
-  - 
-repository-code: 
+  - Transporte-urbano
+  - ônibus
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti1-0387100-easybus
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2022-07-14
