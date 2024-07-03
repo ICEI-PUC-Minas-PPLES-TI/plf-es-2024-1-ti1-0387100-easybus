@@ -10,14 +10,14 @@ authors:
     given-names: William 
   - family-names: Pedro Gomes Ruas
     given-names: João 
-  - family-names: Silva Tavares
-    given-names:Cleiton 
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Vieira Carneiro 
     given-names: Rommel 
   - name-suffix: Professor
     affiliation: PUC Minas
+    family-names: Silva Tavares
+    given-names: Cleiton
 keywords:
   - Transporte-urbano
   - ônibus
